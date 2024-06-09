@@ -76,7 +76,7 @@ Under the totalsupply variable, click the "totalsupply" button to retrieve the t
 ## Authors
 
 - Ankita
-- ankita756900@gmail.com
+ ankita756900@gmail.com
 
 
 
