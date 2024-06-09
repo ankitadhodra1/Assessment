@@ -14,7 +14,7 @@ Once you are on the Remix website, create a new file by clicking on the "file" i
 
 
 
-
+bash
   // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -49,10 +49,9 @@ contract MyToken {
     function burn (address _add,uint _val) public{
         if (balances[_add]>=_val){
             totalsupply -= _val;
-            balances[_add] -= _val;
+            balances[_add] -= _val;}}}
 
-        }
-    }}
+  
 
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile Assesment.sol" button.
