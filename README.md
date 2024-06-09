@@ -13,15 +13,15 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 
 
 
-
 bash
-  // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+       
 
-
-/*
+       // SPDX-License-Identifier: MIT
+        pragma solidity ^0.8.0;
+      /*
        REQUIREMENTS
-    1. Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply)
+    1. Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total 
+    Supply)
     2. Your contract will have a mapping of addresses to balances (address => uint)
     3. You will have a mint function that takes two parameters: an address and a value. 
        The function then increases the total supply by that number and increases the balance 
@@ -31,13 +31,12 @@ pragma solidity ^0.8.0;
        and from the balance of the “sender”.
     5. Lastly, your burn function should have conditionals to make sure the balance of "sender" is greater than or equal 
        to the amount that is supposed to be burned.
-*/
+    */
 
-contract MyToken {
-  
+    contract MyToken {
     // public variables here
-    string public tokenname = "METACRAFTERS";
-    string public tokenabbrv ="MCS";
+    string public tokenname = "Aave";
+    string public tokenabbrv ="AAVe";
     uint public totalsupply =0;
     // mapping variable here
     mapping(address => uint) public balances;
@@ -51,15 +50,14 @@ contract MyToken {
         if (balances[_add]>=_val){
             totalsupply -= _val;
             balances[_add] -= _val;
-
-        }
-    }
-}
+      }}}
 
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile Assesment.sol" button.
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "Assesment" contract from the dropdown menu, and then click on the "Deploy" button.MetaMask will prompt you to confirm the transaction. Confirm the transaction to deploy the contract.
+
+Check under "Deployed Contracts" section that token name and token abbreviation should be same as written in code.
 
 In the "Deployed Contracts" section, expand the MyToken contract.
 Under the "mint" function, enter the address to receive tokens and the amount of tokens to mint.Click the "transact" button next to the mint function.Confirm the transaction in MetaMask.
@@ -77,8 +75,8 @@ Under the totalsupply variable, click the "totalsupply" button to retrieve the t
 
 ## Authors
 
-- Gungun
-gungunbansal2604@gmail.com
+- Ankita
+- ankita756900@gmail.com
 
 
 
