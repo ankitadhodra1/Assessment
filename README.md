@@ -35,7 +35,7 @@ bash
     contract MyToken {
     // public variables here
     string public tokenname = "Aave";
-    string public tokenabbrv ="AAVe";
+    string public tokenabbrv ="AAVE";
     uint public totalsupply =0;
     // mapping variable here
     mapping(address => uint) public balances;
