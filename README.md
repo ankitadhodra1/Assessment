@@ -34,7 +34,6 @@ pragma solidity ^0.8.0;
 */
 
 contract MyToken {
-  
     // public variables here
     string public tokenname = "Aave";
     string public tokenabbrv ="AAVE";
@@ -53,8 +52,7 @@ contract MyToken {
             balances[_add] -= _val;
 
         }
-    }
-}
+    }}
 
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile Assesment.sol" button.
