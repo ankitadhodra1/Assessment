@@ -9,7 +9,7 @@ This program is a simple contract written in Solidity, a programming language us
 ## Executing Program
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
-Once you are on the Remix website, create a new file by clicking on the "file" icon in the left-hand sidebar. Save the file with a ".sol" extension (e.g., Assesment.sol). Copy and paste the following code into the file:
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., Assesment.sol). Copy and paste the following code into the file:
 
 
 
@@ -34,9 +34,10 @@ pragma solidity ^0.8.0;
 */
 
 contract MyToken {
+  
     // public variables here
-    string public tokenname = "Aave";
-    string public tokenabbrv ="AAVE";
+    string public tokenname = "METACRAFTERS";
+    string public tokenabbrv ="MCS";
     uint public totalsupply =0;
     // mapping variable here
     mapping(address => uint) public balances;
@@ -49,9 +50,11 @@ contract MyToken {
     function burn (address _add,uint _val) public{
         if (balances[_add]>=_val){
             totalsupply -= _val;
-            balances[_add] -= _val;}}}
+            balances[_add] -= _val;
 
-  
+        }
+    }
+}
 
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile Assesment.sol" button.
@@ -60,8 +63,6 @@ Once the code is compiled, you can deploy the contract by clicking on the "Deplo
 
 In the "Deployed Contracts" section, expand the MyToken contract.
 Under the "mint" function, enter the address to receive tokens and the amount of tokens to mint.Click the "transact" button next to the mint function.Confirm the transaction in MetaMask.
-
-Check if it shows same token name and token abbreviation as given in code
 
 Under the "burn" function, enter the address from which tokens should be burned (your MetaMask address) and the amount of tokens to burn.Click the "transact" button next to the burn function.Confirm the transaction in MetaMask.
 
@@ -76,11 +77,11 @@ Under the totalsupply variable, click the "totalsupply" button to retrieve the t
 
 ## Authors
 
-- Ankita
-ankita756900@gmail.com
+- Gungun
+gungunbansal2604@gmail.com
 
 
 
 ## License
 
-This project is licensed under [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE.md file for details
+This project is licensed under [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE.md file for details
