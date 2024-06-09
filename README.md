@@ -73,7 +73,7 @@ Under the totalsupply variable, click the "totalsupply" button to retrieve the t
 
 
 
-## Authors
+## Author
 
 - Ankita
  ankita756900@gmail.com
